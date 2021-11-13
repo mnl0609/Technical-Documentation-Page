@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Technical Documentation Page</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav id="navbar">
+  <header>CSS Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+      <a class="nav-link" href="#What_you_should_already_know"
+        >What you should already know</a
+      >
+    </li>
+    <li>
+      <a class="nav-link" href="#cssSelectors_howTo_and_comments">CSS Selectors, How To and Comments</a>
+    </li>
+    <li><a class="nav-link" href="#colors_background_boarders_and_margins">Colors, Background, Borders and Margins</a></li>
+    <li><a class="nav-link" href="#padding_height_and_width_box_Model_outline_and_text">Padding, Height and Width, Box Model, Outline and Text</a></li>
+  
+   
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed. In most simplier way to deliver it, CSS is the language we use to style a Web page. 
+<ul>
+ <b>What is CSS?</b>
+
+	<li>CSS stands for Cascading Style Sheets</li>
+	<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+	<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once
+		External stylesheets are stored in CSS files</li>
+</ul>
+<ul>
+<b>Why Use CSS?</b>
+	<li>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</li>
+</ul>
+      </p>
+<ul>
+      <p><b>CSS Saves a Lot of Work!</b>
+	<li>The style definitions are normally saved in external .css files.</li>
+
+	<li>With an external stylesheet file, you can change the look of an entire website by changing just one file!</li>
+      </p>
+</ul>
+     
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <ul>
+        <li>
+          A general understanding of the Internet and the World Wide Web (WWW).
+        </li>
+        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+        <li>
+          Some programming experience. If you are new to programming, try one of
+          the tutorials linked on the main page about Cascading Style Sheets.
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="cssSelectors_howTo_and_comments">
+    <header>CSS Selectors, How To and Comments</header>
+    <article>
+    	<ul><p><b>We can divide CSS selectors into five categories:</b>
+
+	<li>Simple selectors (select elements based on name, id, class)</li>
+	<li>Combinator selectors (select elements based on a specific relationship between them)</li>
+	<li>Pseudo-class selectors (select elements based on a certain state)</li>
+	<li>Pseudo-elements selectors (select and style a part of an element)</li>
+	<li>Attribute selectors (select elements based on an attribute or attribute value)</li></p></ul>
+      
+
+      <p><ul>The CSS id Selector
+<li>The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element! To select an element with a specific id, write a hash (#) character, followed by the id of the element.</ul></li>
+      </p>
+      <ul><p><b>Three Ways to Insert CSS</b>
+<li>There are three ways of inserting a style sheet:</li>
+<li>External CSS</li>
+<li>Internal CSS</li>
+<li>Inline CSS</li></p></ul>
+
+<ul><p><b>CSS Comments</b>
+<li>Comments are used to explain the code, and may help when you edit the source code at a later date.</li>
+<li>Comments are ignored by browsers.</li>
+<li>CSS comments are not displayed in the browser, but they can help document your source code.</li></p></ul>
+    </article>
+  </section>
+  <section class="main-section" id="colors_background_boarders_and_margins">
+    <header>Colors, Background, Borders and Margins</header>
+    <p><ul><li>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. </li>
+    	<li>CSS/HTML support <b>140 standard color names</b>.</li></p>
+    </ul>
+    <ul><p><b>CSS Background</b>
+    	<li>The CSS background properties are used to add background effects for elements.</li>
+    	<li>Here are the background elements you need to take note of:</li>
+    		<li>background-color</li>
+			<li>background-image</li>
+			<li>background-repeat</li>
+			<li>background-attachment</li>
+			<li>background-position</li>
+			<li>background (shorthand property)</li></p></ul>
+
+	<ul><p><b>CSS Borders</b>
+		<li>The CSS border properties allow you to specify the style, width, and color of an element's border.</li>
+		<li>The border-style property specifies what kind of border to display.</li></p></ul>
+
+<ul><p><b>The following values are allowed:</b>
+
+<li>dotted - Defines a dotted border</li>
+<li>dashed - Defines a dashed border</li>
+<li>solid - Defines a solid border</li>
+<li>double - Defines a double border</li>
+<li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+<li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+<li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+<li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+<li>none - Defines no border</li>
+<li>hidden - Defines a hidden border</li>
+<li>The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</li></p></ul>
+
+<ul><p><b>CSS Margins</b>
+<li>The CSS margin properties are used to create space around elements, outside of any defined borders.</li>
+
+<li>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</li></p></ul>
+
+<ul><p><b>Margin - Individual Sides</b>
+<li>CSS has properties for specifying the margin for each side of an element:</li>
+
+<li>margin-top</li>
+<li>margin-right</li>
+<li>margin-bottom</li>
+<li>margin-left</li>
+All the margin properties can have the following values:
+
+<li>auto - the browser calculates the margin</li>
+<li>length - specifies a margin in px, pt, cm, etc.</li>
+<li>% - specifies a margin in % of the width of the containing element</li>
+<li>inherit - specifies that the margin should be inherited from the parent element</li>
+<li><b>Tip: Negative values are allowed.</b></li></p></ul>
+
+  </section>
+  <section class="main-section" id="padding_height_and_width_box_Model_outline_and_text">
+    <header>Padding, Height and Width, Box Model, Outline and Text</header>
+    <ul><p><b>CSS Padding</b>
+    	<li>Padding is used to create space around an element's content, inside of any defined borders.</li>
+    	<li>The CSS padding properties are used to generate space around an element's content, inside of any defined borders.</li>
+
+<li>With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).</li></p></ul>
+    
+<ul><p><b>CSS Height and Width</b>
+<li>The CSS height and width properties are used to set the height and width of an element.</li>
+
+<li>The CSS max-width property is used to set the maximum width of an element.</li>
+
+<li>The height and width properties are used to set the height and width of an element. The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.</li>
+
+The height and width properties may have the following values:
+
+<li>auto - This is default. The browser calculates the height and width</li>
+<li>length - Defines the height/width in px, cm etc.</li>
+<li>% - Defines the height/width in percent of the containing block</li>
+<li>initial - Sets the height/width to its default value</li>
+<li>inherit - The height/width will be inherited from its parent value</li>
+</p></ul>
+
+    <ul><p><b>CSS Box Model</b>
+<li>In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</li>
+Explanation of the different parts:
+
+<li>Content - The content of the box, where text and images appear</li>
+<li>Padding - Clears an area around the content. The padding is transparent</li>
+<li>Border - A border that goes around the padding and content</li>
+<li>Margin - Clears an area outside the border. The margin is transparent</li>
+<li>The box model allows us to add a border around elements, and to define space between elements.</li>  </p></ul>
+
+<ul><p><b>CSS Outline Style</b>
+<li>The outline-style property specifies the style of the outline, and can have one of the following values:</li>
+
+<li>dotted - Defines a dotted outline</li>
+<li>dashed - Defines a dashed outline</li>
+<li>solid - Defines a solid outline</li>
+<li>double - Defines a double outline</li>
+<li>groove - Defines a 3D grooved outline</li>
+<li>ridge - Defines a 3D ridged outline</li>
+<li>inset - Defines a 3D inset outline</li>
+<li>outset - Defines a 3D outset outline</li>
+<li>none - Defines no outline</li>
+<li>hidden - Defines a hidden outline</li>
+</p></ul>
+
+<ul><p><b>Text Formatting</b>
+<li>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified.</li>
+<li><b>Important: High contrast is very important for people with vision problems. So, always ensure that the contrast between the text color and the background color (or background image) is good!</b></li>
+</p></ul>
+
+  <p><b>This are just some of the CSS functions and elements you can learn. There are so many other aspect that I did not mentioned in this page. And honestly, it is a fun and exciting experience. You can click on the link below to exhibit and enhance your skills more not just only in CSS but on other technology stack. Come and Learn!</b></p>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <ul>
+        <li>
+          All the documentation in this page is taken from
+          <a
+            href="https://www.w3schools.com/css/css_text.asp"
+            target="_blank"
+            >MDN</a
+          >
+        </li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+
+
+</body>
+</html>
